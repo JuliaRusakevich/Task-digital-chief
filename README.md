@@ -6,12 +6,14 @@
 -  возраст города (age)
 -  популяция города (population)
 -  описание (description)
+- 
 Свойства объекта Sight:
 -  наименование достопримечательности (name)
 -  архитектор (architect)
 -  стиль (style)
 -  адрес (address)
 -  описание (description)
+  
 Написаны CRUD контроллер для сущностей City и Sight. 
 
 При сохранении сущностей (City и Sight) данные передаются JSON, не все поля являются обязательными (передача id города обязательна).
@@ -21,6 +23,8 @@
 - чтение всех сущностей (выводится список)
 - чтение только тех достопримечательностей, которые находятся в конкретном городе
 
+  Сборка проекта
+
 Зависимости:
 1. spring-boot-configuration-processor
 2. spring-boot-starter-data-jpa
@@ -29,6 +33,7 @@
 5. spring-boot-test
 6. spring-boot-starter-test
 7. lombok
+   
 Плагины для maven:
 1. spring-boot-maven-plugin для ломбок прописать конфигурацию
 <configuration>
