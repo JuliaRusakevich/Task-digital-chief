@@ -1,0 +1,16 @@
+#Connect to DB
+spring:
+  jpa:
+    database: POSTGRESQL
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+#Hibernate Configuration:
+  datasource:
+    username: julia
+    password:
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=sights
+    driver-class-name: org.postgresql.Driver
