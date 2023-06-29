@@ -25,6 +25,24 @@
 - чтение только тех достопримечательностей, которые находятся в конкретном городе
 
   Сборка проекта
+Создайте pom.xml и пропишите modelVersion - всегда 4.0.0, groupId, artifactId:
+
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.1.1</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.example</groupId>
+    <artifactId>task-digital-chief</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>war</packaging>
+
+Версия java:
+    <properties>
+        <java.version>17</java.version>
+    </properties>
 
 Зависимости:
 1. spring-boot-configuration-processor
@@ -47,7 +65,7 @@
     </excludes>
 </configuration>
 
-Пример моего pom.xml есть.
+Пример моего pom.xml во вложении.
 
 В properties.yml прописать подключения к БД и конфигурацию Hibernate (шаблон есть, свои данные)
 
@@ -56,5 +74,9 @@
 Подготовленные запросы в файлах коллекции Postman.
 
 Файлы postman, ddl, yml добавить в папку src/java/resources.
+
+mvn compile - в папке target скомпилированные классы.
+
+mvn package WAR-файл в target директории.
 
 
