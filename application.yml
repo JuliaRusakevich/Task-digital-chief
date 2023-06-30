@@ -1,16 +1,16 @@
 #Connect to DB
 spring:
   jpa:
-    database: 
-    database-platform: 
-    show-sql: 
-    open-in-view: 
+    database: your data
+    database-platform: your data
+    show-sql: true/false
+    open-in-view: true/false
     properties:
       hibernate:
-        format_sql: 
+        format_sql: true/false
 #Hibernate Configuration:
   datasource:
-    username: 
-    password:
-    url: 
-    driver-class-name: 
+    username: your username
+    password: your password
+    url: your url
+    driver-class-name: driver for DB
